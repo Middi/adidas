@@ -24,7 +24,8 @@ table {
   border-spacing: 0; }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -43,7 +44,8 @@ a:focus, button:focus {
 h1 {
   font-family: 'Muli', sans-serif;
   font-size: 14rem;
-  font-weight: 900; }
+  font-weight: 900;
+  letter-spacing: 0.0034em; }
 
 main {
   background: url("/images/right.jpg");
@@ -54,7 +56,7 @@ main {
   width: 100vw; }
 
 .logo {
-  margin: -90px auto auto 230px;
+  margin: -90px auto auto 190px;
   position: absolute;
   top: 50%; }
   .logo:before {
