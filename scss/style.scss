@@ -7,7 +7,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 10px 20px;
 }
@@ -28,6 +28,10 @@ header {
     font-weight: 600;
 }
 
+.link-active {
+    color: white;
+}
+
 main {
     background: url('/images/right.jpg');
     background-position: right top;
@@ -38,7 +42,7 @@ main {
 }
 
 .logo {
-    margin: -90px auto auto 20%;
+    margin: -90px auto auto 16%;
     position: absolute;
     top: 50%;
     

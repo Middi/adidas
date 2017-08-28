@@ -62,7 +62,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 10px 20px; }
 
@@ -79,6 +79,9 @@ header {
   font-size: 1rem;
   font-weight: 600; }
 
+.link-active {
+  color: white; }
+
 main {
   background: url("/images/right.jpg");
   background-position: right top;
@@ -88,7 +91,7 @@ main {
   width: 100vw; }
 
 .logo {
-  margin: -90px auto auto 20%;
+  margin: -90px auto auto 16%;
   position: absolute;
   top: 50%; }
   .logo:before {
