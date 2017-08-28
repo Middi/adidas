@@ -35,6 +35,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/images\/logo.png": {
+		"ft": 32768,
+		"iS": 63199,
+		"oA": 0,
+		"oAP": "\/images\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/right.jpg": {
 		"ft": 16384,
 		"iS": 125070,

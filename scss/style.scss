@@ -1,6 +1,22 @@
- @import "normalise";
+@import "normalise";
 @import "colors";
 @import "typography";
+
+
+header {
+    border: 2px solid red;
+    position: fixed;
+    max-width: 1200px;
+}
+
+.nav-logo img {
+    width: 70px;
+}
+
+.nav-li {
+    display: inline;
+}
+
 
 main {
     background: url('/images/right.jpg');
