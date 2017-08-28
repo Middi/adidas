@@ -79,7 +79,7 @@ main {
 
 .email {
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   left: 120px; }
 
 .social {
@@ -88,11 +88,34 @@ main {
   font-size: 1rem;
   font-weight: 600;
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   right: 120px; }
   .social a {
     color: white;
     font-family: 'Muli', sans-serif;
     font-size: 1rem;
     font-weight: 600; }
+
+.dates {
+  left: 50%;
+  margin-left: -85px;
+  position: absolute;
+  bottom: 130px; }
+
+.dates:after {
+  border-bottom: 2px solid black;
+  content: " ";
+  position: absolute;
+  top: 7px;
+  width: 150px; }
+
+.date {
+  color: grey;
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-right: 10px; }
+
+.date-active {
+  color: black; }
 /*# sourceMappingURL=style.css.map */
