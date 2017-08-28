@@ -4,9 +4,12 @@
 
 
 header {
-    border: 2px solid red;
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
 }
 
 .nav-logo img {
@@ -15,8 +18,15 @@ header {
 
 .nav-li {
     display: inline;
+    padding: 40px;
 }
 
+.nav-link {
+    color: black;
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
 
 main {
     background: url('/images/right.jpg');

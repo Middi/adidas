@@ -53,15 +53,31 @@ p {
   font-weight: 600; }
 
 header {
-  border: 2px solid red;
-  position: fixed;
-  max-width: 1200px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px; }
 
 .nav-logo img {
   width: 70px; }
 
 .nav-li {
-  display: inline; }
+  display: inline;
+  padding: 40px; }
+
+.nav-link {
+  color: black;
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  font-weight: 600; }
 
 main {
   background: url("/images/right.jpg");
