@@ -105,12 +105,16 @@ header {
   font-weight: 600;
 }
 
+.nav-link:hover {
+  color: grey;
+}
+
 .nav-link-active {
   color: white;
 }
 
-.nav-link:hover {
-  color: grey;
+.nav-link-active:hover {
+  color: white;
 }
 
 /*----------  Mobile Nav  ----------*/
