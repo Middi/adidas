@@ -62,6 +62,18 @@ a {
   transition: color .3s ease-in-out;
 }
 
+::-moz-selection {
+  background: #ffd00b;
+}
+
+::selection {
+  background: #ffd00b;
+}
+
+::-moz-selection {
+  background: #ffd00b;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;

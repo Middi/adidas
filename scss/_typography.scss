@@ -16,3 +16,7 @@ a {
     @include font-base;
     transition: color .3s ease-in-out;
 }
+
+::selection {background: saturate($brand, 100)}
+
+::-moz-selection {background: saturate($brand, 100)}
