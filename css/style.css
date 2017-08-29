@@ -295,6 +295,9 @@ footer {
   .date {
     color: white;
   }
+  .date-active {
+    color: black;
+  }
   .dates:after {
     border-bottom: 1px solid black;
     content: " ";
