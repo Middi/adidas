@@ -1,4 +1,4 @@
-/*----------  Break Point 1 - 880px  ----------*/
+/*----------  Break Point 1 - 1000px  ----------*/
 
 @media only screen and (max-width: 1000px) {
 
@@ -12,30 +12,26 @@
 
     h1 {font-size: 10rem}
 
-    .logo {color: white}
+    .logo, .date {color: white}
 
     .logo:before {
         color: white;
-        margin-left: -275px;
         font-size:  4rem;
+        margin-left: -275px;
     }
 
-    .dates {
-        left: 30%;
-    }
+    .dates {left: 30%}
 
     .dates-li {display: block}
-
-    .date {color: white}
 
     .date-active {color: black}
 
     .dates:after {
         border-bottom: 1px solid black;
         content: " ";
+        left: 80px;
         position: absolute;
         top: 16px;
-        left: 80px;
         width: 40px;
     }
 
@@ -46,39 +42,38 @@
 
 @media only screen and (max-width: 768px) {    
 
-
     nav, .social {display: none}
 
     .logo {
         margin: -90px auto auto 60px;
         
         &:before {
-            margin-left: 0;
+            font-size: 4rem;
             left: -30px;
+            margin-left: 0;
             top: -8px;
-            font-size:  4rem;
         }
     }
 
     h1 {font-size: 8rem}
 
     .dates {
-        top: 65%;
         left: 0;
         margin-left: 60px;
+        top: 65%;
 
-        &-li {
-            padding: 5px;
-        }
+        &-li {padding: 5px}
+
         &:after {
-            top: 12px;
             left: 70px;
+            top: 12px;
         }
     }
 
     footer {padding: 0 20px 20px}
 
     .email-link {font-size: 0.9rem}
+
     .email-prefix {display: none}
 }
 
@@ -95,12 +90,11 @@
         margin: -90px auto auto 40px;
 
         &:before {
-            font-size:  3rem;
+            font-size: 3rem;
             left: -20px;
             top: -10px;
         }
     }
-
 
     h1 {font-size: 6rem}
 }
@@ -117,9 +111,8 @@
 @media only screen and (max-height: 600px) {  
 
     .logo {
-
         &:before {
-            font-size:  3rem;
+            font-size: 3rem;
             left: 250px;
             top: -10px;
         }
@@ -130,9 +123,8 @@
     .dates {
         top: 50%;
 
-        &-li {
-            padding: 5px;
-        }
+        &-li {padding: 5px}
+        
         &:after {
             top: 12px;
             left: 70px;

@@ -44,20 +44,20 @@ a:focus, button:focus {
 }
 
 h1 {
+  font-family: 'Muli', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Muli', sans-serif;
   font-size: 14rem;
   font-weight: 900;
   letter-spacing: -0.05em;
 }
 
 a {
+  font-family: 'Muli', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Muli', sans-serif;
   -webkit-transition: color .3s ease-in-out;
   transition: color .3s ease-in-out;
 }
@@ -75,17 +75,17 @@ a {
 }
 
 header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 1300px;
   margin: 0 auto;
+  max-width: 1300px;
   padding: 15px 30px;
 }
 
@@ -119,14 +119,14 @@ header {
 
 /*----------  Mobile Nav  ----------*/
 .mobile-nav {
+  background-color: rgba(250, 205, 16, 0.87);
   height: 100vh;
-  width: 100%;
-  z-index: 2;
-  top: 0;
   left: 0;
   position: absolute;
-  background-color: rgba(250, 205, 16, 0.87);
   text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .mobile-nav ul {
@@ -143,12 +143,12 @@ header {
 }
 
 .hamburger {
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 4px 7px;
+  position: absolute;
   right: 12px;
   top: 12px;
-  position: absolute;
-  border: 2px solid white;
-  padding: 4px 7px;
-  border-radius: 4px;
   z-index: 22;
 }
 
@@ -178,23 +178,23 @@ main {
 }
 
 .logo:before {
-  height: 45px;
-  width: 45px;
-  left: 50%;
-  margin-left: -380px;
+  color: grey;
   content: "08";
   font-size: 6rem;
+  height: 45px;
+  left: 50%;
   letter-spacing: -0.01em;
   line-height: 45px;
+  margin-left: -380px;
   position: absolute;
-  color: grey;
+  width: 45px;
 }
 
 .dates {
+  bottom: 130px;
   left: 50%;
   margin-left: -130px;
   position: absolute;
-  bottom: 130px;
 }
 
 .dates-li {
@@ -206,9 +206,9 @@ main {
 .dates:after {
   border-bottom: 1px solid black;
   content: " ";
+  left: 180px;
   position: absolute;
   top: 7px;
-  left: 180px;
   width: 150px;
 }
 
@@ -223,11 +223,11 @@ main {
 }
 
 footer {
+  bottom: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: absolute;
   padding: 0 100px 40px;
-  bottom: 0;
+  position: absolute;
   width: 100%;
 }
 
@@ -245,8 +245,8 @@ footer {
 }
 
 .social {
-  float: right;
   color: white;
+  float: right;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -261,7 +261,7 @@ footer {
   color: black;
 }
 
-/*----------  Break Point 1 - 880px  ----------*/
+/*----------  Break Point 1 - 1000px  ----------*/
 @media only screen and (max-width: 1000px) {
   body {
     background-color: #facd10;
@@ -278,13 +278,13 @@ footer {
   h1 {
     font-size: 10rem;
   }
-  .logo {
+  .logo, .date {
     color: white;
   }
   .logo:before {
     color: white;
-    margin-left: -275px;
     font-size: 4rem;
+    margin-left: -275px;
   }
   .dates {
     left: 30%;
@@ -292,18 +292,15 @@ footer {
   .dates-li {
     display: block;
   }
-  .date {
-    color: white;
-  }
   .date-active {
     color: black;
   }
   .dates:after {
     border-bottom: 1px solid black;
     content: " ";
+    left: 80px;
     position: absolute;
     top: 16px;
-    left: 80px;
     width: 40px;
   }
 }
@@ -317,25 +314,25 @@ footer {
     margin: -90px auto auto 60px;
   }
   .logo:before {
-    margin-left: 0;
-    left: -30px;
-    top: -8px;
     font-size: 4rem;
+    left: -30px;
+    margin-left: 0;
+    top: -8px;
   }
   h1 {
     font-size: 8rem;
   }
   .dates {
-    top: 65%;
     left: 0;
     margin-left: 60px;
+    top: 65%;
   }
   .dates-li {
     padding: 5px;
   }
   .dates:after {
-    top: 12px;
     left: 70px;
+    top: 12px;
   }
   footer {
     padding: 0 20px 20px;

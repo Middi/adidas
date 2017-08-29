@@ -1,8 +1,8 @@
 @mixin font-base {
+    font-family: 'Muli', sans-serif;
     text-rendering:  optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing:  grayscale;
-    font-family: 'Muli', sans-serif;
 }
 
 h1 {

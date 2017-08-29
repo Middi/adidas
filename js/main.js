@@ -20,12 +20,20 @@ $(document).ready(function () {
         }
     });
 
-    
+
+    // ===========================
+    // Nav Active Links
+    // ===========================
+
     $('.nav-link').on('click', function(){
         $('.nav-link').removeClass('nav-link-active');
         $(this).addClass('nav-link-active');
     });
 
+
+    // ===========================
+    // Date Active Links
+    // ===========================
 
     $('.date').on('click', function(){
         $('.date').removeClass('date-active');
