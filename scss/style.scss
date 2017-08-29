@@ -26,10 +26,7 @@ header {
     font-family: 'Muli', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
-}
-
-.link-active {
-    color: white;
+    &-active {color: white}
 }
 
 main {
@@ -44,13 +41,13 @@ main {
 .logo {
     margin: -90px auto auto 16%;
     position: absolute;
-    top: 47%;
+    top: 46%;
     
     &:before {
         height:  45px;
         width:   45px;
         left:     50%;
-        margin-left: -350px;
+        margin-left: -380px;
         content: "08";
         font-size:  6rem;
         letter-spacing: -0.01em;
@@ -104,10 +101,8 @@ main {
     font-size: 1.1rem;
     font-weight: 600;
     padding-right: 10px;
-}
 
-.date-active {
-    color: black;
+    &-active {color: black}
 }
 
 @import "media-queries";
