@@ -1,12 +1,18 @@
-h1 {
+@mixin font-base {
+    text-rendering:  optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:  grayscale;
     font-family: 'Muli', sans-serif;
+}
+
+h1 {
+    @include font-base;
     font-size: 14rem;
     font-weight: 900;
     letter-spacing: -0.05em;
 }
 
-p {
-    font-family: 'Muli', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
+a {
+    @include font-base;
+    transition: color .3s ease-in-out;
 }

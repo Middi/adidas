@@ -13,11 +13,11 @@
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
 		"oAP": "\/css\/style-min.css",
 		"oF": 0,
-		"oS": 3
+		"oS": 1
 		},
 	"\/css\/style.css.map": {
 		"ft": 8192,
@@ -124,7 +124,7 @@
 		"oA": 0,
 		"oAP": "\/css\/style.css",
 		"oF": 2,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		}
 	},
@@ -1897,8 +1897,8 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"createSourceMap": 0,
-		"outputStyle": 3,
+		"createSourceMap": 1,
+		"outputStyle": 1,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0
 		},

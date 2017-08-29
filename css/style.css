@@ -4,53 +4,63 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  border-spacing: 0;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 input, select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; }
+  appearance: none;
+}
 
 a:focus, button:focus {
-  outline: none; }
+  outline: none;
+}
 
 h1 {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: 'Muli', sans-serif;
   font-size: 14rem;
   font-weight: 900;
-  letter-spacing: -0.05em; }
+  letter-spacing: -0.05em;
+}
 
-p {
+a {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: 'Muli', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600; }
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
 
 header {
   display: -webkit-box;
@@ -64,22 +74,32 @@ header {
           align-items: center;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+}
 
 .nav-logo img {
-  width: 70px; }
+  width: 70px;
+}
 
 .nav-li {
   display: inline;
-  padding: 40px; }
+  padding: 40px;
+}
 
 .nav-link {
   color: black;
   font-family: 'Muli', sans-serif;
   font-size: 0.9rem;
-  font-weight: 600; }
-  .nav-link-active {
-    color: white; }
+  font-weight: 600;
+}
+
+.nav-link-active {
+  color: white;
+}
+
+.nav-link:hover {
+  color: grey;
+}
 
 main {
   background: url("/images/right.jpg");
@@ -87,62 +107,86 @@ main {
   background-repeat: no-repeat;
   background-size: auto 100%;
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+}
 
 .logo {
   margin: -90px auto auto 16%;
   position: absolute;
-  top: 46%; }
-  .logo:before {
-    height: 45px;
-    width: 45px;
-    left: 50%;
-    margin-left: -380px;
-    content: "08";
-    font-size: 6rem;
-    letter-spacing: -0.01em;
-    line-height: 45px;
-    position: absolute;
-    color: grey; }
+  top: 46%;
+}
 
-.email {
+.logo:before {
+  height: 45px;
+  width: 45px;
+  left: 50%;
+  margin-left: -380px;
+  content: "08";
+  font-size: 6rem;
+  letter-spacing: -0.01em;
+  line-height: 45px;
   position: absolute;
-  bottom: 40px;
-  left: 120px; }
-
-.social {
-  color: white;
-  font-family: 'Muli', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  position: absolute;
-  bottom: 40px;
-  right: 120px; }
-  .social a {
-    color: white;
-    font-family: 'Muli', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600; }
+  color: grey;
+}
 
 .dates {
   left: 50%;
   margin-left: -130px;
   position: absolute;
-  bottom: 130px; }
+  bottom: 130px;
+}
 
 .dates:after {
   border-bottom: 2px solid black;
   content: " ";
   position: absolute;
   top: 7px;
-  width: 150px; }
+  width: 150px;
+}
 
 .date {
   color: grey;
   font-family: 'Muli', sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
-  padding-right: 10px; }
-  .date-active {
-    color: black; }
+  padding-right: 10px;
+}
+
+.date-active, .date:hover {
+  color: black;
+}
+
+.email {
+  position: absolute;
+  bottom: 40px;
+  left: 120px;
+}
+
+.email-link {
+  color: black;
+  font-weight: 600;
+}
+
+.email-link:hover {
+  color: grey;
+}
+
+.social {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: 40px;
+  right: 120px;
+}
+
+.social-link {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.social-link:hover {
+  color: black;
+}
 /*# sourceMappingURL=style.css.map */

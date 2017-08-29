@@ -12,9 +12,7 @@ header {
     padding: 10px 20px;
 }
 
-.nav-logo img {
-    width: 70px;
-}
+.nav-logo img {width: 70px}
 
 .nav-li {
     display: inline;
@@ -26,8 +24,9 @@ header {
     font-family: 'Muli', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
-    
+
     &-active {color: white}
+    &:hover {color: grey}
 }
 
 main {
@@ -54,30 +53,7 @@ main {
         letter-spacing: -0.01em;
         line-height:  45px;
         position: absolute;
-        color:     grey;
-    }
-}
-
-.email {
-    position: absolute;
-    bottom: 40px;
-    left: 120px;
-}
-
-.social {
-    color: white;
-    font-family: 'Muli', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    position: absolute;
-    bottom: 40px;
-    right: 120px;
-
-    a {
-        color: white;
-        font-family: 'Muli', sans-serif;
-        font-size: 0.9rem;
-        font-weight: 600;
+        color: grey;
     }
 }
 
@@ -103,7 +79,36 @@ main {
     font-weight: 600;
     padding-right: 10px;
 
-    &-active {color: black}
+    &-active, &:hover {color: black}
+}
+
+.email {
+    position: absolute;
+    bottom: 40px;
+    left: 120px;
+
+    &-link {
+        color: black;
+        font-weight: 600;
+
+        &:hover {color: grey}
+    }
+}
+
+.social {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: 40px;
+    right: 120px;
+}
+
+.social-link {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    &:hover {color:black;}
 }
 
 @import "media-queries";
