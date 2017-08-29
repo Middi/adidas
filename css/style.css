@@ -43,13 +43,13 @@ a:focus, button:focus {
 
 h1 {
   font-family: 'Muli', sans-serif;
-  font-size: 14rem;
+  font-size: 12rem;
   font-weight: 900;
   letter-spacing: -0.05em; }
 
 p {
   font-family: 'Muli', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600; }
 
 header {
@@ -93,13 +93,12 @@ main {
 .logo {
   margin: -90px auto auto 16%;
   position: absolute;
-  top: 50%; }
+  top: 47%; }
   .logo:before {
     height: 45px;
     width: 45px;
     left: 50%;
-    margin-left: -380px;
-    margin-top: 0px;
+    margin-left: -350px;
     content: "08";
     font-size: 6rem;
     letter-spacing: -0.01em;
@@ -123,12 +122,12 @@ main {
   .social a {
     color: white;
     font-family: 'Muli', sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600; }
 
 .dates {
   left: 50%;
-  margin-left: -85px;
+  margin-left: -130px;
   position: absolute;
   bottom: 130px; }
 
@@ -142,7 +141,7 @@ main {
 .date {
   color: grey;
   font-family: 'Muli', sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   padding-right: 10px; }
 
