@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".hamburger").click(function(){$(".mobile-nav").hasClass("hidden")?$(".mobile-nav").slideDown("slow",function(){$(".mobile-nav").removeClass("hidden")}):$(".mobile-nav").slideUp("slow",function(){$(".mobile-nav").addClass("hidden")})})});

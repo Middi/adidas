@@ -74,7 +74,7 @@ header {
           align-items: center;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 15px 30px;
 }
 
 .nav-logo img {
@@ -101,6 +101,77 @@ header {
   color: grey;
 }
 
+/*----------  Mobile Nav  ----------*/
+.mobile-nav {
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #facd10;
+  text-align: center;
+}
+
+.mobile-nav ul {
+  list-style-type: none;
+  padding-top: 50px;
+}
+
+.mobile-nav li {
+  padding: 10px 0;
+}
+
+.mobile-nav li a {
+  font-size: 2rem;
+}
+
+.hamburger {
+  height: 42px;
+  width: 44px;
+  border: 2px solid white;
+  border-radius: 4px;
+  z-index: 22;
+}
+
+.hidden, .hamburger {
+  display: none;
+}
+
+#nav-toggle span {
+  right: 19px;
+  top: 35px;
+  position: absolute;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+#nav-toggle span:active,
+#nav-toggle span:before:active,
+#nav-toggle span:after:active {
+  background: white;
+}
+
+#nav-toggle span:before {
+  top: -10px;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+/*=====  End of Header / Nav  ======*/
 main {
   background: url("/images/right.jpg");
   background-position: right top;
@@ -136,30 +207,43 @@ main {
   bottom: 130px;
 }
 
+.dates-li {
+  display: inline;
+  padding: 10px 5px;
+  text-align: right;
+}
+
 .dates:after {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   content: " ";
   position: absolute;
   top: 7px;
+  left: 180px;
   width: 150px;
 }
 
 .date {
   color: grey;
-  font-family: 'Muli', sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
-  padding-right: 10px;
 }
 
 .date-active, .date:hover {
   color: black;
+  font-weight: 600;
+}
+
+footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  padding: 0 100px 40px;
+  bottom: 0;
+  width: 100%;
 }
 
 .email {
-  position: absolute;
-  bottom: 40px;
-  left: 120px;
+  float: left;
 }
 
 .email-link {
@@ -172,12 +256,10 @@ main {
 }
 
 .social {
+  float: right;
   color: white;
   font-size: 1rem;
   font-weight: 600;
-  position: absolute;
-  bottom: 40px;
-  right: 120px;
 }
 
 .social-link {
@@ -188,5 +270,130 @@ main {
 
 .social-link:hover {
   color: black;
+}
+
+/*----------  Break Point 1 - 880px  ----------*/
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: #facd10;
+  }
+  header {
+    padding: 12px;
+  }
+  nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  h1 {
+    font-size: 10rem;
+  }
+  .logo {
+    color: white;
+  }
+  .logo:before {
+    color: white;
+    margin-left: -275px;
+    font-size: 4rem;
+  }
+  .dates {
+    left: 30%;
+  }
+  .dates-li {
+    display: block;
+  }
+  .date {
+    color: white;
+  }
+  .dates:after {
+    border-bottom: 1px solid black;
+    content: " ";
+    position: absolute;
+    top: 16px;
+    left: 80px;
+    width: 40px;
+  }
+}
+
+/*----------  Break Point 2 - 768px  ----------*/
+@media only screen and (max-width: 768px) {
+  nav, .social {
+    display: none;
+  }
+  .logo {
+    margin: -90px auto auto 60px;
+  }
+  .logo:before {
+    margin-left: 0;
+    left: -30px;
+    top: -8px;
+    font-size: 4rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  .dates {
+    left: 0;
+    margin-left: 100px;
+  }
+  .dates-li {
+    padding: 5px;
+  }
+  .dates:after {
+    top: 12px;
+    left: 70px;
+  }
+  footer {
+    padding: 0 30px 30px;
+  }
+  .email-prefix {
+    display: none;
+  }
+}
+
+/*----------  Break Point 2 - 500px  ----------*/
+@media only screen and (max-width: 500px) {
+  main {
+    background-position: left top;
+  }
+  .logo {
+    margin: -90px auto auto 40px;
+  }
+  .logo:before {
+    font-size: 3rem;
+    left: -20px;
+    top: -10px;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+/*
+/* LANDSCAPE
+/*
+
+
+/*----------  Break Point 2 - 600px  ----------*/
+@media only screen and (max-height: 600px) {
+  .logo:before {
+    font-size: 3rem;
+    left: 250px;
+    top: -10px;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  .dates {
+    top: 50%;
+  }
+  .dates-li {
+    padding: 5px;
+  }
+  .dates:after {
+    top: 12px;
+    left: 70px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

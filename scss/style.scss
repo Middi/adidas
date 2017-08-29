@@ -9,7 +9,7 @@ header {
     align-items: center;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 15px 30px;
 }
 
 .nav-logo img {width: 70px}
@@ -28,6 +28,72 @@ header {
     &-active {color: white}
     &:hover {color: grey}
 }
+
+
+/*----------  Mobile Nav  ----------*/
+
+.mobile-nav {
+    height: 100vh;
+    width:  100%;
+    z-index:   2;
+    top: 0;
+    left: 0;
+    position:      absolute;
+    background-color: $brand;
+    text-align:      center;
+
+    ul {
+        list-style-type: none;
+        padding-top: 50px;
+    }
+
+    li {
+        padding: 10px 0;
+
+        a {font-size: 2rem}
+    }
+}
+
+.hamburger{
+    height: 42px;
+    width: 44px;
+    border: 2px solid white;
+    border-radius: 4px;
+    z-index: 22;
+}
+
+.hidden, .hamburger {display: none}
+
+
+#nav-toggle span {
+    right:        19px;
+    top:          35px;
+    position: absolute;
+}
+
+#nav-toggle span, 
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor:     pointer;
+  border-radius:  1px;
+  height:         3px;
+  width:         35px;
+  background: white;
+  position:  absolute;
+  display:      block;
+  content:         '';
+
+  &:active {background: white}
+}
+
+#nav-toggle span:before {top: -10px}
+
+#nav-toggle span:after {bottom: -10px}
+
+/*=====  End of Header / Nav  ======*/
+
+
+
 
 main {
     background: url('/images/right.jpg');
@@ -62,30 +128,44 @@ main {
     margin-left: -130px;
     position: absolute;
     bottom: 130px;
+
+    &-li {
+        display: inline;
+        padding: 10px 5px;
+        text-align: right;
+    }
 }
 
 .dates:after {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     content: " ";
     position: absolute;
     top: 7px;
+    left: 180px;
     width: 150px;
 }
 
 .date {
     color: grey;
-    font-family: 'Muli', sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
-    padding-right: 10px;
 
-    &-active, &:hover {color: black}
+    &-active, &:hover {
+            color: black;
+            font-weight: 600;
+        }
+}
+
+footer {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 0 100px 40px;
+    bottom: 0;
+    width: 100%;
 }
 
 .email {
-    position: absolute;
-    bottom: 40px;
-    left: 120px;
+    float: left;
 
     &-link {
         color: black;
@@ -96,12 +176,10 @@ main {
 }
 
 .social {
+    float: right;
     color: white;
     font-size: 1rem;
     font-weight: 600;
-    position: absolute;
-    bottom: 40px;
-    right: 120px;
 }
 
 .social-link {
