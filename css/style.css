@@ -127,9 +127,11 @@ header {
 }
 
 .hamburger {
-  height: 42px;
-  width: 44px;
+  right: 12px;
+  top: 12px;
+  position: absolute;
   border: 2px solid white;
+  padding: 4px 7px;
   border-radius: 4px;
   z-index: 22;
 }
@@ -138,37 +140,9 @@ header {
   display: none;
 }
 
-#nav-toggle span {
-  right: 19px;
-  top: 35px;
-  position: absolute;
-}
-
-#nav-toggle span,
-#nav-toggle span:before,
-#nav-toggle span:after {
+.fa {
+  color: white;
   cursor: pointer;
-  border-radius: 1px;
-  height: 3px;
-  width: 35px;
-  background: white;
-  position: absolute;
-  display: block;
-  content: '';
-}
-
-#nav-toggle span:active,
-#nav-toggle span:before:active,
-#nav-toggle span:after:active {
-  background: white;
-}
-
-#nav-toggle span:before {
-  top: -10px;
-}
-
-#nav-toggle span:after {
-  bottom: -10px;
 }
 
 /*=====  End of Header / Nav  ======*/
