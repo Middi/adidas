@@ -173,7 +173,7 @@ header {
 
 /*=====  End of Header / Nav  ======*/
 main {
-  background: url("/images/right.jpg");
+  background: url("../images/right.jpg");
   background-position: right top;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -334,8 +334,9 @@ footer {
     font-size: 8rem;
   }
   .dates {
+    top: 65%;
     left: 0;
-    margin-left: 100px;
+    margin-left: 60px;
   }
   .dates-li {
     padding: 5px;
