@@ -109,7 +109,7 @@ header {
   top: 0;
   left: 0;
   position: absolute;
-  background-color: #facd10;
+  background-color: rgba(250, 205, 16, 0.87);
   text-align: center;
 }
 
