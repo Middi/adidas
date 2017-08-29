@@ -24,4 +24,11 @@ $(document).ready(function () {
         $('.nav-link').removeClass('nav-link-active');
         $(this).addClass('nav-link-active');
     });
+
+
+    $('.date').on('click', function(){
+        $('.date').removeClass('date-active');
+        $(this).addClass('date-active');
+    });
+
 });

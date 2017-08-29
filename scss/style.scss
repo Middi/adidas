@@ -24,7 +24,7 @@ header {
     font-family: 'Muli', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
-    
+
     &:hover {color: grey}
 
     &-active {
@@ -138,7 +138,6 @@ main {
 
     &-active, &:hover {
             color: black;
-            font-weight: 600;
         }
 }
 
