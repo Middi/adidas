@@ -84,8 +84,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1300px;
+  margin: 0 0 0 auto;
+  max-width: 1400px;
   padding: 15px 30px;
 }
 
@@ -95,22 +95,30 @@ header {
 
 .nav-li {
   display: inline;
-  padding: 40px;
+  padding: 30px;
 }
 
-.nav-link {
-  color: black;
+.nav-link, .mob-link {
+  color: white;
   font-family: 'Muli', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
-.nav-link:hover {
-  text-decoration: underline;
+.nav-link:hover, .mob-link:hover {
+  border-bottom: 2px solid white;
 }
 
 .nav-link-active {
-  text-decoration: underline;
+  border-bottom: 2px solid white;
+}
+
+.nav-link-active:hover {
+  border-bottom: 2px solid white;
+}
+
+.mob-link {
+  color: black;
 }
 
 /*----------  Mobile Nav  ----------*/
