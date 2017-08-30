@@ -25,12 +25,9 @@ header {
     font-size: 0.9rem;
     font-weight: 600;
 
-    &:hover {color: grey}
+    &:hover {text-decoration: underline}
 
-    &-active {
-        color: white;
-        &:hover {color: white}
-    }
+    &-active {text-decoration: underline}
 }
 
 

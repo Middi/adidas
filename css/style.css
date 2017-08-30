@@ -106,15 +106,11 @@ header {
 }
 
 .nav-link:hover {
-  color: grey;
+  text-decoration: underline;
 }
 
 .nav-link-active {
-  color: white;
-}
-
-.nav-link-active:hover {
-  color: white;
+  text-decoration: underline;
 }
 
 /*----------  Mobile Nav  ----------*/
